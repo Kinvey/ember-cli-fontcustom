@@ -1,25 +1,25 @@
 # Ember-cli-fontcustom
 
-This README outlines the details of collaborating on this Ember addon.
+Tired of searching for a Font Awesome icon that kinda sorta works? Custom webfonts, ftw! Just drop SVGs into a folder, and voila, you've got a custom web icon font.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```shell
+$ npm install --save ember-cli-fontcustom
+```
 
-## Running
+In your `Brocfile.js`:
 
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+```js
+var app = new EmberApp({
+  // Configuration is done through these options. Defaults are shown below
+  icons: {
+    // a path to your folder of svgs, or a Broccoli tree
+    svgSources: 'app/styles/icons', 
+    // a path to the CSS template
+    cssTemplate: // A default, bootstrap based template is bundled with this addon
+    // the destination folder in your built app output
+    dest: 'assets'
+  }
+});
+```
