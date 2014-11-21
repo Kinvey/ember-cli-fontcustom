@@ -37,6 +37,6 @@
     "configPath": "tests/dummy/config"
   },
   "dependencies": {
-    "broccoli-fontcustom": "0.0.6"
+    "broccoli-fontcustom": "Kinvey/broccoli-fontcustom#addon-refactor"
   }
 }
