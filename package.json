@@ -35,5 +35,8 @@
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "dependencies": {
+    "broccoli-fontcustom": "0.0.6"
   }
 }
