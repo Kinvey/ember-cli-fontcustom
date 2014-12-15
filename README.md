@@ -23,3 +23,7 @@ var app = new EmberApp({
   }
 });
 ```
+
+### Note
+
+You must have installed `fontcustom` to be able to use this addon. Check installation guide [there](https://github.com/FontCustom/fontcustom).
