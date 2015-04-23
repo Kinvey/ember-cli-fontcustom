@@ -1,6 +1,7 @@
 'use strict';
 var path = require('path');
 var fontcustom = require('broccoli-fontcustom');
+var mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-cli-fontcustom',
@@ -23,7 +24,7 @@ module.exports = {
   },
 
   // Build font files
-  // TODO this isn't ideal - icons.css should be include-able in my SCSS/LESS build
+  // TODO this isn't ideal - icons.css should be included in my SCSS/LESS build
   treeForPublic: function(tree) {
     var iconDestPath = this.iconDest ?
       path.join('assets', this.iconDest) :
@@ -40,6 +41,6 @@ module.exports = {
       output: iconDestPath,
       templates: [ templatePath ]
     });
-    return this.mergeTrees([ tree, fontTree ]);
+    return mergeTrees([ tree, fontTree ]);
   }
 };
