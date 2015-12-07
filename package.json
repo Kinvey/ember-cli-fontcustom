@@ -37,7 +37,7 @@
     "configPath": "tests/dummy/config"
   },
   "dependencies": {
-    "broccoli-fontcustom": "Kinvey/broccoli-fontcustom#addon-refactor",
+    "broccoli-fontcustom": "miguelcobain/broccoli-fontcustom#cross-spawn",
     "broccoli-merge-trees": "^0.2.1"
   }
 }
