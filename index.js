@@ -17,9 +17,9 @@ module.exports = {
     this._super.included.apply(this, arguments);
   },
 
-  contentFor: function(type) {
+  contentFor: function(type, config) {
     if (type === 'head') {
-      return '<link rel="stylesheet" href="assets/icons.css">';
+      return `<link rel="stylesheet" href="${config.rootURL}assets/icons.css">`;
     }
   },
 
